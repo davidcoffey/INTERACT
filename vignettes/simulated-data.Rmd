@@ -1,0 +1,181 @@
+---
+title: "INTERACT Analysis with Simulated Data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{INTERACT Analysis with Simulated Data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+## Introduction
+
+This vignette walks through a standard INTERACT workflow using simulated data. We generate expression matrices for three cell populations (`T cells`, `Macrophages`, and `Tumor`) along with tumor somatic copy number variants (CNV) and single-nucleotide variants (SNV), score intercellular communication and train the Graph Autoencoder with `RunInteract()`, and visualize the resulting signaling networks.
+
+---
+
+## 1. Load Libraries
+
+```{r setup}
+# Load required packages
+library(INTERACT)
+library(dplyr)
+library(igraph)
+library(ggplot2)
+library(ggraph)
+library(visNetwork)
+```
+
+---
+
+## 2. Simulate Input Data
+
+### Cell Population Expression Matrices
+
+Each cell population is represented as a numeric matrix with samples in rows and gene symbols in columns. Input expression matrices should contain non-negative, log-transformed values (such as $\log_2(\text{CPM} + 1)$).
+
+```{r sim_expr}
+# Define cohort size and gene symbols spanning ligands, receptors, and downstream pathways
+n.samples = 100
+genes = c(
+  "IL6", "IL6R", "IL6ST", "IFNG", "IFNGR1", "IFNGR2", "CD274", "PDCD1",
+  "CXCL12", "CXCR4", "TNF", "TNFRSF1A", "TGFB1", "TGFBR1", "TGFBR2",
+  "CCL2", "CCR2", "CXCL9", "CXCL10", "CXCR3", "ICAM1", "ITGAL", "ITGB2",
+  "STAT1", "STAT3", "JAK1", "JAK2", "IRF1", "SOCS3", "NFKB1", "NFKBIA",
+  "RELB", "SMAD2", "SMAD3", "JUN", "FOS", "MYC", "AKT1", "PIK3CA", "PTEN"
+)
+set.seed(42)
+
+# Simulate log-scale expression matrices with 5 underlying signaling states
+sample.states = sample(1:5, n.samples, replace = TRUE)
+
+sim.expression = function(n, g, pop.offset) {
+  mat = matrix(runif(n * length(g), min = 1, max = 4), nrow = n, ncol = length(g))
+  for (i in seq_len(n)) {
+    active.idx = ((sample.states[i] + pop.offset) %% 5) * 8 + (1:8)
+    active.idx = active.idx[active.idx <= length(g)]
+    mat[i, active.idx] = mat[i, active.idx] + runif(length(active.idx), min = 4, max = 7)
+  }
+  rownames(mat) = paste0("Sample_", seq_len(n))
+  colnames(mat) = g
+  return(mat)
+}
+
+modalities = list(
+  `T cells` = sim.expression(n.samples, genes, pop.offset = 1),
+  `Macrophages` = sim.expression(n.samples, genes, pop.offset = 2),
+  `Tumor` = sim.expression(n.samples, genes, pop.offset = 3)
+)
+```
+
+### Tumor Genomic Data (CNV and SNV)
+
+Next, we simulate gene-level copy number and somatic mutation matrices for the tumor population. Copy number values are centered at `2.0` (diploid), and somatic mutations are encoded as `1` (activating), `-1` (inactivating), or `0` (wild type).
+
+```{r sim_genomic}
+# Simulate continuous CNV matrix centered at diploid (2.0)
+cnv = matrix(pmax(0.5, rnorm(n.samples * length(genes), mean = 2.0, sd = 0.5)), nrow = n.samples)
+rownames(cnv) = paste0("Sample_", seq_len(n.samples))
+colnames(cnv) = genes
+
+# Simulate directional SNV matrix (-1 = inactivating, 0 = wild type, 1 = activating)
+snv = matrix(
+  sample(c(-1, 0, 1), n.samples * length(genes), replace = TRUE, prob = c(0.05, 0.85, 0.10)),
+  nrow = n.samples
+)
+rownames(snv) = paste0("Sample_", seq_len(n.samples))
+colnames(snv) = genes
+```
+
+---
+
+## 3. Run INTERACT
+
+We pass the non-tumor expression list, tumor expression matrix, and tumor genomic matrices to `RunInteract()`. By default, `RunInteract()` queries the OmniPath intercellular database, computes pathway and program weights, trains the multi-channel Graph Autoencoder, and identifies sample clusters.
+
+```{r run_interact}
+# Run the full INTERACT pipeline
+results = RunInteract(
+  nontumor.matrices = modalities[c("T cells", "Macrophages")],
+  tumor.matrix = modalities[["Tumor"]],
+  snv.matrix = snv,
+  cnv.matrix = cnv,
+  n.cores = 1
+)
+```
+
+---
+
+## 4. Visualize Signaling Networks
+
+`BuildGraph()` constructs an `igraph` network for a selected sample, which can then be plotted interactively with `PlotVisNetwork()` or statically with `PlotGGraph()`.
+
+```{r vis_results}
+# Construct sample-specific igraph object
+graph = BuildGraph(
+  sample.id = "Sample_1",
+  interactions = results$interactions,
+  snv.matrix = snv,
+  cnv.matrix = cnv,
+  tumor.id = "Tumor",
+  top.n = 100
+)
+
+# Plot interactive cell-cell network
+PlotVisNetwork(graph, top.n = 100)
+
+# Plot static network highlighting Tumor and IL6 signaling
+PlotGGraph(
+  graph = graph,
+  interactions = results$interactions,
+  highlight.cell = "Tumor",
+  highlight.gene = "IL6",
+  top.n = 100
+)
+```
+
+---
+
+## 5. Inspect Output Tables
+
+`RunInteract()` returns a list containing the scored interactions (`interactions`), latent GNN patient embeddings (`embeddings`), cluster-level edge attributions (`edge.gradients`), pipeline diagnostics (`diagnostics`), network topology summaries (`topology.metrics`), and precomputed viewer data (`precompute`).
+
+### Scored Interactions
+
+```{r review_results}
+# View top rows of the scored interaction table
+head(results$interactions[, c("sender", "receiver", "source_genesymbol", "target_genesymbol", "base.score", "final.score")])
+```
+
+### Latent GNN Patient Embeddings
+
+```{r review_embeddings}
+# View the first 6 columns of the GNN patient embeddings
+head(results$embeddings[, 1:6])
+```
+
+### Input Signal Summary
+
+```{r review_diagnostics}
+# Inspect summary statistics for each input matrix
+results$diagnostics$input.signal
+```
+
+---
+
+## 6. Launch the Interactive Shiny Viewer
+
+To explore cohort-wide interactions, pathway activities, and patient clusters interactively, pass the `results` object to `LaunchInteractApp()`:
+
+```{r launch_app, eval = FALSE}
+# Launch interactive Shiny dashboard
+LaunchInteractApp(results = results)
+```

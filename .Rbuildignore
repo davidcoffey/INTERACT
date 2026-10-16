@@ -1,0 +1,12 @@
+^\.DS_Store$
+^.*\.Rproj$
+^\.Rproj\.user$
+^scratch$
+^Data$
+^Figures$
+^omnipathr-log$
+^pkgdown$
+^[0-9].*\.R$
+^LICENSE\.md$
+^_pkgdown\.yml$
+^docs$

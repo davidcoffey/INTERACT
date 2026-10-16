@@ -1,0 +1,11 @@
+url: ~
+template:
+  bootstrap: 5
+  math-rendering: mathjax
+
+articles:
+- title: Vignettes
+  navbar: ~
+  contents:
+  - simulated-data
+  - cohort-mapping

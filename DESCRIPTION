@@ -1,0 +1,50 @@
+Package: INTERACT
+Title: INTEgrative Analysis for Cellular and Tumor Interactions
+Version: 1.0
+Authors@R: person("David", "Coffey", email = "davidcoffey@miami.edu", role = c("aut", "cre"))
+Description: Integrates genomic alterations, pathway activity, and phenotypic states to score ecosystem signaling.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    data.table,
+    dplyr,
+    ggplot2,
+    ggraph,
+    tidyr,
+    tibble,
+    rlang,
+    OmnipathR,
+    igraph,
+    ggsci,
+    pbapply,
+    visNetwork,
+    progeny,
+    parallelly,
+    reactome.db,
+    AnnotationDbi,
+    org.Hs.eg.db,
+    GSVA,
+    uwot,
+    umap,
+    reticulate,
+    shiny
+Suggests: 
+    class,
+    knitr,
+    rmarkdown,
+    patchwork,
+    readr,
+    stringr,
+    shinydashboard,
+    shinyWidgets,
+    shinycssloaders,
+    shinyjs,
+    DT,
+    plotly,
+    survival,
+    survminer,
+    circlize
+VignetteBuilder: knitr
+

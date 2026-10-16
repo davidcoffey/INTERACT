@@ -1,0 +1,153 @@
+Activation of innate immune response	GO:0002218	GO	https://amigo.geneontology.org/amigo/term/GO:0002218	164
+Adaptive immune memory response	GO:0090716	GO	https://amigo.geneontology.org/amigo/term/GO:0090716	3
+Adaptive immune memory response involving T cells and B cells	GO:0090717	GO	https://amigo.geneontology.org/amigo/term/GO:0090717	3
+Adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains	GO:0002460	GO	https://amigo.geneontology.org/amigo/term/GO:0002460	162
+Advanced glycosylation endproduct receptor signaling	R-HSA-879415	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-879415	13
+Alpha-beta T cell activation	GO:0046631	GO	https://amigo.geneontology.org/amigo/term/GO:0046631	89
+Alpha-protein kinase 1 signaling pathway	R-HSA-9645460	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-9645460	11
+Antibacterial innate immune response	GO:0140367	GO	https://amigo.geneontology.org/amigo/term/GO:0140367	10
+Antibody-dependent cellular cytotoxicity	GO:0001788	GO	https://amigo.geneontology.org/amigo/term/GO:0001788	8
+Antifungal innate immune response	GO:0061760	GO	https://amigo.geneontology.org/amigo/term/GO:0061760	18
+Antigen processing and presentation	GO:0019882	GO	https://amigo.geneontology.org/amigo/term/GO:0019882	101
+Antigen receptor-mediated signaling pathway	GO:0050851	GO	https://amigo.geneontology.org/amigo/term/GO:0050851	159
+Antimicrobial humoral response	GO:0019730	GO	https://amigo.geneontology.org/amigo/term/GO:0019730	146
+Antimicrobial peptides	R-HSA-6803157	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-6803157	95
+Antiviral innate immune response	GO:0140374	GO	https://amigo.geneontology.org/amigo/term/GO:0140374	54
+Antiviral mechanism by IFN-stimulated genes	R-HSA-1169410	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-1169410	149
+B cell activation	GO:0042113	GO	https://amigo.geneontology.org/amigo/term/GO:0042113	185
+B cell costimulation	GO:0031296	GO	https://amigo.geneontology.org/amigo/term/GO:0031296	3
+B cell differentiation	GO:0030183	GO	https://amigo.geneontology.org/amigo/term/GO:0030183	123
+B cell receptor apoptotic signaling pathway	GO:1990117	GO	https://amigo.geneontology.org/amigo/term/GO:1990117	2
+B cell selection	GO:0002339	GO	https://amigo.geneontology.org/amigo/term/GO:0002339	4
+Butyrophilin (BTN) family interactions	R-HSA-8851680	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-8851680	12
+Cell activation involved in immune response	GO:0002263	GO	https://amigo.geneontology.org/amigo/term/GO:0002263	152
+Cellular extravasation	GO:0045123	GO	https://amigo.geneontology.org/amigo/term/GO:0045123	17
+Class I MHC mediated antigen processing & presentation	R-HSA-983169	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-983169	381
+Complement activation, alternative pathway	GO:0006957	GO	https://amigo.geneontology.org/amigo/term/GO:0006957	15
+Complement activation, classical pathway	GO:0006958	GO	https://amigo.geneontology.org/amigo/term/GO:0006958	39
+Complement activation	GO:0006956	GO	https://amigo.geneontology.org/amigo/term/GO:0006956	57
+Complement activation, lectin pathway	GO:0001867	GO	https://amigo.geneontology.org/amigo/term/GO:0001867	9
+Complement cascade	R-HSA-166658	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-166658	58
+Complement component C5a signaling pathway	GO:0038178	GO	https://amigo.geneontology.org/amigo/term/GO:0038178	3
+Complement receptor mediated signaling pathway	GO:0002430	GO	https://amigo.geneontology.org/amigo/term/GO:0002430	15
+Costimulation by the CD28 family	R-HSA-388841	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-388841	69
+C-type lectin receptors (CLRs)	R-HSA-5621481	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-5621481	143
+Cytosolic sensors of pathogen-associated DNA 	R-HSA-1834949	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-1834949	64
+DAP12 interactions	R-HSA-2172127	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-2172127	45
+DDX58/IFIH1-mediated induction of interferon-alpha/beta	R-HSA-168928	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-168928	82
+Diapedesis	GO:0050904	GO	https://amigo.geneontology.org/amigo/term/GO:0050904	7
+Fc epsilon receptor (FCERI) signaling	R-HSA-2454202	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-2454202	134
+Fcgamma receptor (FCGR) dependent phagocytosis	R-HSA-2029480	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-2029480	86
+Fc-gamma receptor signaling pathway involved in phagocytosis	GO:0038096	GO	https://amigo.geneontology.org/amigo/term/GO:0038096	20
+Fc receptor mediated stimulatory signaling pathway	GO:0002431	GO	https://amigo.geneontology.org/amigo/term/GO:0002431	22
+FLT3 Signaling	R-HSA-9607240	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-9607240	38
+Gamma-delta T cell activation	GO:0046629	GO	https://amigo.geneontology.org/amigo/term/GO:0046629	20
+Germinal center formation	GO:0002467	GO	https://amigo.geneontology.org/amigo/term/GO:0002467	10
+Granuloma formation	GO:0002432	GO	https://amigo.geneontology.org/amigo/term/GO:0002432	1
+Growth hormone receptor signaling	R-HSA-982772	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-982772	24
+Humoral immune response mediated by circulating immunoglobulin	GO:0002455	GO	https://amigo.geneontology.org/amigo/term/GO:0002455	5
+Immune complex clearance	GO:0002434	GO	https://amigo.geneontology.org/amigo/term/GO:0002434	3
+Immune response in gut-associated lymphoid tissue	GO:0002387	GO	https://amigo.geneontology.org/amigo/term/GO:0002387	4
+Immune response involved in response to exogenous dsRNA	GO:1902615	GO	https://amigo.geneontology.org/amigo/term/GO:1902615	1
+Immune response-regulating cell surface receptor signaling pathway involved in phagocytosis	GO:0002433	GO	https://amigo.geneontology.org/amigo/term/GO:0002433	20
+Immune response to tumor cell	GO:0002418	GO	https://amigo.geneontology.org/amigo/term/GO:0002418	7
+Immune system development	GO:0002520	GO	https://amigo.geneontology.org/amigo/term/GO:0002520	4
+Immunological memory process	GO:0090713	GO	https://amigo.geneontology.org/amigo/term/GO:0090713	5
+Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell	R-HSA-198933	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-198933	133
+Induced systemic resistance	GO:0009682	GO	https://amigo.geneontology.org/amigo/term/GO:0009682	1
+Inflammatory response to antigenic stimulus	GO:0002437	GO	https://amigo.geneontology.org/amigo/term/GO:0002437	42
+Innate immune response activating cell surface receptor signaling pathway	GO:0002220	GO	https://amigo.geneontology.org/amigo/term/GO:0002220	66
+Innate immune response-activating signaling pathway	GO:0002758	GO	https://amigo.geneontology.org/amigo/term/GO:0002758	139
+Innate immune response in mucosa	GO:0002227	GO	https://amigo.geneontology.org/amigo/term/GO:0002227	27
+Interferon alpha/beta signaling	R-HSA-909733	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-909733	77
+Interferon gamma signaling	R-HSA-877300	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-877300	96
+Interleukin-10 signaling	R-HSA-6783783	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-6783783	47
+Interleukin-12 family signaling	R-HSA-447115	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-447115	57
+Interleukin-17 signaling	R-HSA-448424	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-448424	72
+Interleukin-1 family signaling	R-HSA-446652	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-446652	153
+Interleukin-20 family signaling	R-HSA-8854691	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-8854691	25
+Interleukin-2 family signaling	R-HSA-451927	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-451927	44
+Interleukin-3, Interleukin-5 and GM-CSF signaling	R-HSA-512988	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-512988	48
+Interleukin-4 and Interleukin-13 signaling	R-HSA-6785807	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-6785807	108
+Interleukin-6 family signaling	R-HSA-6783589	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-6783589	24
+Interleukin-7 signaling	R-HSA-1266695	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-1266695	36
+Leukocyte activation involved in immune response	GO:0002366	GO	https://amigo.geneontology.org/amigo/term/GO:0002366	148
+Leukocyte activation involved in inflammatory response	GO:0002269	GO	https://amigo.geneontology.org/amigo/term/GO:0002269	34
+Leukocyte adhesive activation	GO:0050902	GO	https://amigo.geneontology.org/amigo/term/GO:0050902	2
+Leukocyte chemotaxis	GO:0030595	GO	https://amigo.geneontology.org/amigo/term/GO:0030595	146
+Leukocyte degranulation	GO:0043299	GO	https://amigo.geneontology.org/amigo/term/GO:0043299	38
+Leukocyte homeostasis	GO:0001776	GO	https://amigo.geneontology.org/amigo/term/GO:0001776	81
+Leukocyte mediated cytotoxicity	GO:0001909	GO	https://amigo.geneontology.org/amigo/term/GO:0001909	66
+Leukocyte mediated immunity	GO:0002443	GO	https://amigo.geneontology.org/amigo/term/GO:0002443	194
+Leukocyte migration involved in immune response	GO:0002522	GO	https://amigo.geneontology.org/amigo/term/GO:0002522	3
+Leukocyte migration involved in inflammatory response	GO:0002523	GO	https://amigo.geneontology.org/amigo/term/GO:0002523	19
+Lymphocyte activation involved in immune response	GO:0002285	GO	https://amigo.geneontology.org/amigo/term/GO:0002285	118
+Lymphocyte costimulation	GO:0031294	GO	https://amigo.geneontology.org/amigo/term/GO:0031294	45
+Lymphocyte proliferation	GO:0046651	GO	https://amigo.geneontology.org/amigo/term/GO:0046651	128
+Memory B cell differentiation	GO:0002319	GO	https://amigo.geneontology.org/amigo/term/GO:0002319	1
+Memory T cell activation	GO:0035709	GO	https://amigo.geneontology.org/amigo/term/GO:0035709	2
+Memory T cell differentiation	GO:0043379	GO	https://amigo.geneontology.org/amigo/term/GO:0043379	1
+MHC class II antigen presentation	R-HSA-2132295	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-2132295	123
+Mononuclear cell migration	GO:0071674	GO	https://amigo.geneontology.org/amigo/term/GO:0071674	114
+Myeloid cell homeostasis	GO:0002262	GO	https://amigo.geneontology.org/amigo/term/GO:0002262	32
+Myeloid leukocyte activation	GO:0002274	GO	https://amigo.geneontology.org/amigo/term/GO:0002274	121
+Myeloid leukocyte migration	GO:0097529	GO	https://amigo.geneontology.org/amigo/term/GO:0097529	137
+Natural killer cell activation	GO:0030101	GO	https://amigo.geneontology.org/amigo/term/GO:0030101	56
+Natural killer cell differentiation	GO:0001779	GO	https://amigo.geneontology.org/amigo/term/GO:0001779	16
+Natural killer cell mediated cytotoxicity	GO:0042267	GO	https://amigo.geneontology.org/amigo/term/GO:0042267	33
+Natural killer cell mediated immune response to tumor cell	GO:0002423	GO	https://amigo.geneontology.org/amigo/term/GO:0002423	1
+Natural killer cell mediated immunity	GO:0002228	GO	https://amigo.geneontology.org/amigo/term/GO:0002228	35
+Negative regulation of activation-induced cell death of T cells	GO:0070236	GO	https://amigo.geneontology.org/amigo/term/GO:0070236	3
+Negative regulation of antigen processing and presentation	GO:0002578	GO	https://amigo.geneontology.org/amigo/term/GO:0002578	9
+Negative regulation of antigen receptor-mediated signaling pathway	GO:0050858	GO	https://amigo.geneontology.org/amigo/term/GO:0050858	34
+Negative regulation of cytoplasmic pattern recognition receptor signaling pathway	GO:0039532	GO	https://amigo.geneontology.org/amigo/term/GO:0039532	38
+Negative regulation of germinal center formation	GO:0002635	GO	https://amigo.geneontology.org/amigo/term/GO:0002635	2
+Negative regulation of hemocyte differentiation	GO:0045611	GO	https://amigo.geneontology.org/amigo/term/GO:0045611	1
+Negative regulation of hemopoiesis	GO:1903707	GO	https://amigo.geneontology.org/amigo/term/GO:1903707	119
+Negative regulation of immune effector process	GO:0002698	GO	https://amigo.geneontology.org/amigo/term/GO:0002698	124
+Negative regulation of immune response	GO:0050777	GO	https://amigo.geneontology.org/amigo/term/GO:0050777	199
+Negative regulation of isotype switching	GO:0045829	GO	https://amigo.geneontology.org/amigo/term/GO:0045829	4
+Negative regulation of leukocyte activation	GO:0002695	GO	https://amigo.geneontology.org/amigo/term/GO:0002695	195
+Negative regulation of leukocyte migration	GO:0002686	GO	https://amigo.geneontology.org/amigo/term/GO:0002686	56
+Negative regulation of mast cell apoptotic process	GO:0033026	GO	https://amigo.geneontology.org/amigo/term/GO:0033026	1
+Negative regulation of respiratory burst involved in inflammatory response	GO:0060266	GO	https://amigo.geneontology.org/amigo/term/GO:0060266	5
+Negative regulation of T cell costimulation	GO:2000524	GO	https://amigo.geneontology.org/amigo/term/GO:2000524	3
+Negative regulation of tolerance induction	GO:0002644	GO	https://amigo.geneontology.org/amigo/term/GO:0002644	1
+Negative regulation of toll-like receptor 2 signaling pathway	GO:0034136	GO	https://amigo.geneontology.org/amigo/term/GO:0034136	7
+Negative regulation of toll-like receptor 4 signaling pathway	GO:0034144	GO	https://amigo.geneontology.org/amigo/term/GO:0034144	20
+Negative regulation of toll-like receptor 5 signaling pathway	GO:0034148	GO	https://amigo.geneontology.org/amigo/term/GO:0034148	1
+Negative regulation of toll-like receptor signaling pathway	GO:0034122	GO	https://amigo.geneontology.org/amigo/term/GO:0034122	22
+Neutrophil degranulation	R-HSA-6798695	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-6798695	479
+Nucleotide-binding domain, leucine rich repeat containing receptor (NLR) signaling pathways	R-HSA-168643	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-168643	57
+Opsonization	GO:0008228	GO	https://amigo.geneontology.org/amigo/term/GO:0008228	8
+Organ or tissue specific immune response	GO:0002251	GO	https://amigo.geneontology.org/amigo/term/GO:0002251	37
+Other interleukin signaling	R-HSA-449836	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-449836	24
+Peripheral B cell tolerance induction	GO:0002451	GO	https://amigo.geneontology.org/amigo/term/GO:0002451	1
+Peripheral T cell tolerance induction	GO:0002458	GO	https://amigo.geneontology.org/amigo/term/GO:0002458	1
+Peripheral tolerance induction	GO:0002465	GO	https://amigo.geneontology.org/amigo/term/GO:0002465	2
+Plasmacytoid dendritic cell activation	GO:0002270	GO	https://amigo.geneontology.org/amigo/term/GO:0002270	3
+Primary adaptive immune response	GO:0090720	GO	https://amigo.geneontology.org/amigo/term/GO:0090720	1
+Production of molecular mediator of immune response	GO:0002440	GO	https://amigo.geneontology.org/amigo/term/GO:0002440	92
+Prolactin receptor signaling	R-HSA-1170546	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-1170546	15
+Rap1 signalling	R-HSA-392517	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-392517	16
+Respiratory burst involved in defense response	GO:0002679	GO	https://amigo.geneontology.org/amigo/term/GO:0002679	9
+Respiratory burst involved in inflammatory response	GO:0002536	GO	https://amigo.geneontology.org/amigo/term/GO:0002536	2
+ROS and RNS production in phagocytes	R-HSA-1222556	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-1222556	36
+Signaling by CSF1 (M-CSF) in myeloid cells	R-HSA-9680350	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-9680350	31
+Signaling by CSF3 (G-CSF)	R-HSA-9674555	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-9674555	30
+Signaling by the B Cell Receptor (BCR)	R-HSA-983705	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-983705	112
+Somatic diversification of immune receptors	GO:0002200	GO	https://amigo.geneontology.org/amigo/term/GO:0002200	53
+Stimulatory C-type lectin receptor signaling pathway	GO:0002223	GO	https://amigo.geneontology.org/amigo/term/GO:0002223	23
+T cell activation involved in immune response	GO:0002286	GO	https://amigo.geneontology.org/amigo/term/GO:0002286	69
+T cell costimulation	GO:0031295	GO	https://amigo.geneontology.org/amigo/term/GO:0031295	44
+T cell differentiation	GO:0030217	GO	https://amigo.geneontology.org/amigo/term/GO:0030217	144
+T cell mediated cytotoxicity	GO:0001913	GO	https://amigo.geneontology.org/amigo/term/GO:0001913	16
+T cell mediated immune response to tumor cell	GO:0002424	GO	https://amigo.geneontology.org/amigo/term/GO:0002424	3
+T cell proliferation	GO:0042098	GO	https://amigo.geneontology.org/amigo/term/GO:0042098	74
+T cell selection	GO:0045058	GO	https://amigo.geneontology.org/amigo/term/GO:0045058	28
+TCR signaling	R-HSA-202403	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-202403	120
+TNFR2 non-canonical NF-kB pathway	R-HSA-5668541	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-5668541	102
+Tolerance induction dependent upon immune response	GO:0002461	GO	https://amigo.geneontology.org/amigo/term/GO:0002461	3
+Tolerance induction	GO:0002507	GO	https://amigo.geneontology.org/amigo/term/GO:0002507	19
+Toll-like Receptor Cascades	R-HSA-168898	Reactome	https://reactome.org/PathwayBrowser/#/R-HSA-168898	172
+Type 2 immune response	GO:0042092	GO	https://amigo.geneontology.org/amigo/term/GO:0042092	7
